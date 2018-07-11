@@ -1,0 +1,45 @@
+#notif-container{
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  max-width:300px;
+  width:90%;
+  max-height: 98%;
+  display: flex;
+  flex-direction: column-reverse;
+  background: none;
+  z-index: 99999999999999999999;
+}
+.notif{
+  background: #fff;
+  background: rgba(255,255,255,.99);
+  border-top: 5px solid;
+  padding: 4px 10px 10px 10px;
+  border-radius:2px;
+  box-shadow: 0 3px 2px #888;
+  color : #444;
+  margin: 7px 0;
+  position: relative;
+}
+
+.notif .time{position: absolute; right: 1em; font-size: 1em; bottom : 3em; color : slategrey; cursor: pointer}
+.notif .cross{position: absolute; right: .25em; font-size: 2.2em; top: -.25em; color : #888; cursor: pointer}
+.notif .cross:hover{color: #444}
+.notif .btn{border: none; border-radius: 3px}
+
+/* Info-Blue Defaults*/
+.notif{border-color:#1b809e}
+.notif .btn{background-color: #1b809e}
+.notif h4{color:#1b809e}
+
+.notif-success{border-color:lawngreen}
+.notif .btn-success{background-color: lawngreen}
+.notif-success h4{color:#169688}
+
+.notif-danger{border-color:#ce4844}
+.notif .btn-danger{background-color: #ce4844}
+.notif-danger h4{color:#ce4844}
+
+.notif-warning{border-color:#aa6708}
+.notif .btn-warning{background-color: #aa6708}
+.notif-warning h4{color:#aa6708}
